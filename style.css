@@ -1,0 +1,86 @@
+body{
+margin:0;
+font-family:Arial;
+text-align:center;
+color:white;
+background:#14001a;
+overflow:hidden;
+transition:1s;
+}
+
+.titulo{
+position:fixed;
+top:10px;
+width:100%;
+}
+
+.tela{display:none;margin-top:120px;}
+.ativa{display:block;}
+
+button{
+display:block;
+margin:10px auto;
+padding:12px;
+width:250px;
+border:none;
+border-radius:10px;
+background:#7b2cbf;
+color:white;
+cursor:pointer;
+}
+
+.fundo{
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#2a0040,#000);
+animation:move 10s infinite alternate;
+z-index:-1;
+}
+
+@keyframes move{
+0%{filter:brightness(1);}
+100%{filter:brightness(1.3);}
+}
+
+/* gatinho */
+#gatinho{
+position:fixed;
+font-size:30px;
+pointer-events:none;
+}
+
+/* efeitos */
+.fumaca{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(255,255,255,0.05);
+animation:fuma 2s infinite;
+}
+
+@keyframes fuma{
+0%{opacity:0}
+50%{opacity:0.3}
+100%{opacity:0}
+}
+
+.estrelas::after{
+content:"✨ ✦ ✧ ✨ ✦";
+animation:brilho 1s infinite alternate;
+}
+
+@keyframes brilho{
+from{opacity:0.3;}
+to{opacity:1;}
+}
+
+/* temas */
+.tema-vaidade{background:gold;color:black;}
+.tema-desprezo{background:#222;}
+.tema-inveja{background:green;}
+.tema-culpa{background:#0d1b2a;}
+.tema-inseguranca{background:#3a0ca3;}
+.tema-vinganca{background:darkred;}
+.tema-odio{background:black;}
+.tema-obsessao{background:#4a001f;}
