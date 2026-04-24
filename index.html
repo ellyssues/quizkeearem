@@ -1,0 +1,45 @@
+<div id="app">
+
+  <h1 id="titulo">Abismo das Flores</h1>
+
+  <!-- TELA INICIAL -->
+  <div id="inicio" class="tela ativa">
+    <h2>Descubra seu Keearem</h2>
+    <button onclick="iniciarQuiz()">Começar</button>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quiz" class="tela">
+    <p id="pergunta"></p>
+    <div id="respostas"></div>
+  </div>
+
+  <!-- RESULTADO -->
+  <div id="resultado" class="tela">
+    <h2 id="nomeResultado"></h2>
+    <img id="imgResultado">
+    <p id="descricao"></p>
+    <div id="porcentagens"></div>
+  </div>
+
+</div>
+
+<!-- gatinho -->
+<img id="gato" src="https://i.imgur.com/Z7AzH2c.png">
+
+<audio id="musica" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6c7b0b3c0e.mp3" type="audio/mpeg">
+</audio>
+
+<button id="muteBtn" onclick="toggleSom()">🔊</button>
+
+<!-- música ambiente -->
+<audio id="bgm" loop></audio>
+
+<!-- efeito de batida -->
+<audio id="batida">
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_6c7b0b3c0e.mp3">
+</audio>
+
+<!-- sussurros -->
+<audio id="voz"></audio>
