@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Abismo das Flores</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="titulo">🌸 Abismo das Flores</h1>
+
+<!-- fundo animado -->
+<div class="fundo"></div>
+
+<!-- gatinho -->
+<div id="gatinho">🐱</div>
+
+<!-- início -->
+<div id="inicio" class="tela ativa">
+  <h2>Descubra seu Keearem</h2>
+  <button onclick="iniciar()">Começar</button>
+</div>
+
+<!-- quiz -->
+<div id="quiz" class="tela">
+  <h2 id="pergunta"></h2>
+
+  <div class="botoes">
+    <button onclick="responder(2)">Concordo plenamente</button>
+    <button onclick="responder(1)">Concordo</button>
+    <button onclick="responder(0)">Neutro</button>
+    <button onclick="responder(-1)">Discordo</button>
+    <button onclick="responder(-2)">Discordo totalmente</button>
+  </div>
+</div>
+
+<!-- resultado -->
+<div id="resultado" class="tela">
+  <h2 id="tipo"></h2>
+  <p id="descricao"></p>
+  <p id="porcentagem"></p>
+
+  <div class="efeitos">
+    <div class="fumaca"></div>
+    <div class="estrelas"></div>
+  </div>
+</div>
+
+<audio id="bgm" loop></audio>
+<audio id="impacto"></audio>
+<audio id="voz"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
